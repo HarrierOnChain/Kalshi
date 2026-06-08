@@ -11,6 +11,19 @@
 
 ---
 
+## Live on Kalshi
+
+<div align="center">
+
+<img width="820" alt="Kalshi trading bot TUI" src="https://github.com/user-attachments/assets/b6c51ba1-14c6-4582-858c-e9441516dd1d" />
+<img width="820" alt="Kalshi trading bot TUI" src="https://github.com/user-attachments/assets/66d9cb72-e14a-414f-93e5-600fb1d3f49f" />
+
+<sub>The shared TUI running against Kalshi — live positions, P&L, and circuit-breaker state. <!-- TODO: swap in Kalshi-specific captures --></sub>
+
+</div>
+
+---
+
 ## Strategies on Kalshi
 
 These bots run on Kalshi through a single venue adapter on the shared engine — same risk controls, same TUI, full dry-run support.
