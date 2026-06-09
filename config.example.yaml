@@ -1,0 +1,62 @@
+# Kalshi Trading Bot — example config.
+# Copy to `config.yaml` and fill in. NEVER commit your real config.yaml.
+# Full engine + all 20+ venue adapters:
+#   https://github.com/HarrierOnChain/Prediction-Markets-Trading-Bot-Toolkits
+
+venue: kalshi   # adapter selector
+enable_trading: false               # ALWAYS start in dry-run
+
+credentials:
+  # Uncomment the block that matches Kalshi.
+
+  # On-chain venues (wallet auth):
+  # private_key: "0000000000000000000000000000000000000000000000000000000000000000"
+  # funder_address: "0x0000000000000000000000000000000000000000"
+
+  # Centralized / regulated venues (API auth):
+  # api_key: ""
+  # api_secret: ""
+
+risk:
+  circuit_breaker:
+    max_consecutive_large_trades: 5
+    window_seconds: 60
+    cooldown_seconds: 300
+  depth_guard:
+    min_orderbook_depth_usd: 250
+  trade_floor:
+    min_trade_size_usd: 5
+
+# Strategies available on Kalshi. Toggle per your thesis.
+strategies:
+  cross_market_arbitrage:
+    enabled: true
+    min_edge_cents: 0.8  # hedged legs only fire above this
+
+  resolution_sniper:
+    enabled: true
+    min_certainty: 0.95  # only snipe >= 95c near-certainties
+
+  orderbook_imbalance:
+    enabled: true
+    refresh_ms: 500
+
+  market_making:
+    enabled: true
+    spread_cents: 1
+    inventory_skew: true
+
+  direction_hunting:
+    enabled: true
+    windows: ["5m", "15m"]
+    take_profit_cents: 3
+    stop_loss_cents: 3
+
+  spread_farming:
+    enabled: true
+    target_spread_cents: 0.5
+
+  sports_execution:
+    enabled: true
+    sports: ["NBA", "NFL", "Soccer"]
+    max_latency_ms: 50
