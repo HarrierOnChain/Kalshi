@@ -44,6 +44,20 @@
 
 ---
 
+## 快速开始
+
+克隆仓库、填入密钥、运行 —— TUI 让你选择策略。
+
+```bash
+git clone https://github.com/HarrierOnChain/Kalshi.git
+cd Kalshi
+cp config.example.yaml config.yaml   # add your keys
+cargo run --release                  # launch the TUI
+# headless: cargo run --release -- run copy-trading
+```
+
+---
+
 ## 一个引擎，覆盖所有平台
 
 本仓库是 **Kalshi** 的入口。执行核心、风控层以及全部 20+ 个平台适配器都位于主工具包中：

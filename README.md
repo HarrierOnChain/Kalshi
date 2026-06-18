@@ -44,6 +44,20 @@ These bots run on Kalshi through a single venue adapter on the shared engine —
 
 ---
 
+## Quickstart
+
+Clone, drop in your keys, and run — the TUI lets you pick a strategy.
+
+```bash
+git clone https://github.com/HarrierOnChain/Kalshi.git
+cd Kalshi
+cp config.example.yaml config.yaml   # add your keys
+cargo run --release                  # launch the TUI
+# headless: cargo run --release -- run copy-trading
+```
+
+---
+
 ## One engine, every venue
 
 This repo is the **Kalshi** entry point. The execution core, risk layer, and all 20+ venue adapters live in the main toolkit:
