@@ -46,11 +46,12 @@ strategies:
     spread_cents: 1
     inventory_skew: true
 
-  direction_hunting:
+  directional_arbitrage:
     enabled: true
-    windows: ["5m", "15m"]
-    take_profit_cents: 3
-    stop_loss_cents: 3
+    max_basket_cost: 0.99   # require Up+Down <= this to enter
+    tilt_threshold_cents: 1.5
+    max_tilt_ratio: 3.0     # 1.0 = pure arb, 3.0 = up to 3:1 tilt
+    limit_only: true
 
   spread_farming:
     enabled: true

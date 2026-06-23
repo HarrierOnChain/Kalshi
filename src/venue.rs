@@ -15,7 +15,7 @@ pub const STRATEGIES: &[&str] = &[
     "Resolution Sniper",
     "Orderbook Imbalance",
     "Market Making",
-    "Direction Hunting",
+    "Directional Arbitrage",
     "Spread Farming",
     "Sports Execution",
 ];

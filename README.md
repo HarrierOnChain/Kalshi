@@ -37,7 +37,7 @@ These bots run on Kalshi through a single venue adapter on the shared engine —
 | 🎯 **Resolution Sniper** — 95¢ near-certainty → guaranteed $1.00 payout |
 | 📊 **Orderbook Imbalance** — the signal *is* the order book, no external feeds |
 | 💰 **Market Making** — be the house, not the gambler (two-sided GTD, inventory skew) |
-| 🎯 **Direction Hunting** — define the edge once, the engine grinds 24/7 (auto TP + SL) |
+| 🎯 **Directional Arbitrage** — arb base (Up + Down < $1), tilted toward the side with more edge |
 | 📈 **Spread Farming** — a thousand 0.5¢ wins compound into one number |
 | 🏆 **Sports Execution** — click, filled, done — under 50ms FAK |
 
